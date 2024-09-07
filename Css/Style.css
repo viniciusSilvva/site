@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+    font-family: "Poppins", sans-serif;
+
+}
+.interface
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/*Estilo do header*/
+header
+{
+    width: 100%;
+    padding: 40px 0;
+}
+header .interface
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+header .logo img
+{
+    margin-top: -20px;
+    max-width: 200px;
+    border-radius: 100px;
+}
+header .menu-desk nav ul{
+   list-style-type: none;
+}
+header .menu-desk nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desk nav ul li a{
+    position: relative;
+    color: rgb(222, 222, 240);
+    text-decoration: none;
+} 
+  
+header .menu-desk nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(231, 223, 223);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  header .menu-desk nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+.texts
+{
+    color: azure;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 30%; /* Ajuste a largura conforme necessário */
+    text-align: justify; /* Alinha o texto justificado */
+}
+h1{
+    color: white;
+    
+    margin-left: 50px;
+    font-size: 50px;
+}
+.foot{
+   
+    margin-top: -400px;
+    margin-left: 800px;
+    width: 400px;
+}
+.tex
+{
+    margin-top: -80px;
+    margin-left: 50px;
+    color: white;
+    width: 30%;
+    text-align: justify;
+}
